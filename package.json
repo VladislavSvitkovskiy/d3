@@ -1,26 +1,43 @@
 {
-  "name": "d-3",
+  "name": "healthapp-web",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.3.0",
+    "@reduxjs/toolkit": "^1.8.1",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.11.48",
-    "@types/react": "^18.0.17",
-    "@types/react-dom": "^18.0.6",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "@types/jest": "^27.5.0",
+    "@types/node": "^16.11.34",
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.3",
+    "@types/react-redux": "^7.1.24",
+    "axios": "^0.27.2",
+    "classnames": "^2.3.1",
+    "connected-react-router": "^6.9.2",
+    "d3": "^7.6.1",
+    "history": "^4.10.1",
+    "moment": "^2.29.3",
+    "react": "^18.1.0",
+    "react-datepicker": "^4.8.0",
+    "react-dom": "^18.1.0",
+    "react-input-mask": "^2.0.4",
+    "react-paginate": "^8.1.3",
+    "react-redux": "^8.0.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "5.0.1",
-    "typescript": "^4.7.4",
+    "react-select": "^5.4.0",
+    "react-spinners": "^0.12.0",
+    "sass": "^1.51.0",
+    "typescript": "^4.6.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -38,6 +55,30 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/history": "^4.7.11",
+    "@types/react-datepicker": "^4.4.1",
+    "@types/react-input-mask": "^3.0.1",
+    "@types/react-router-dom": "^5.3.3",
+    "@typescript-eslint/parser": "^5.23.0",
+    "eslint": "^8.15.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standart": "^0.2.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-standard": "^5.0.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.1",
+    "prettier": "^2.6.2"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js, jsx}": [
+      "eslint --max-warnings 0"
     ]
   }
 }
